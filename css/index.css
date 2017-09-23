@@ -1,0 +1,109 @@
+body {
+  font: 800 15px Lato, sans-serif;
+  line-height: 1.8;
+  background-color: mintcream;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.container-fluid {
+  padding: 60px 30px;
+}
+.panel {
+  border: 1px solid black;
+  border-radius:0 !important;
+  transition: box-shadow 0.5s;
+}
+.panel-heading {
+  color: #fff !important;
+  background-color: silver !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.panel-footer {
+  background-color: white !important;
+}
+.panel-footer h3 {
+  font-size: 32px;
+}
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #080808;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 10px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: snow !important;
+  border: 0;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: black !important;
+  background-color: #fff !important;
+  border: 0;
+  border-radius: 0;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+.bp-silver {
+  background-color: silver;
+}
+#about, #portions, #advantages {
+  margin-top: 60px;
+}
+#portion {
+  margin-top: -60px;
+}
+#pricing, #contact {
+  margin-top: 100px;
+}
+#contact {
+  margin-top: 150px;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 2;
+    transform: translateY(0%);
+  }
+}
